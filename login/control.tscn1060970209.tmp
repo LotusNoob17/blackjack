@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://dokr100roi6uv"]
+
+[ext_resource type="Script" uid="uid://dg6alntsvpbh6" path="res://login/control.gd" id="1_3c14k"]
+
+[node name="LoginScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1149.0
+offset_bottom = 648.0
+script = ExtResource("1_3c14k")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 238.0
+offset_right = 585.0
+offset_bottom = 261.0
+theme_override_font_sizes/font_size = 23
+text = "Usuario:"
+
+[node name="username_line" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 296.0
+offset_right = 648.0
+offset_bottom = 327.0
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 402.0
+offset_right = 627.0
+offset_bottom = 434.0
+theme_override_font_sizes/font_size = 23
+text = "Contraseña:"
+
+[node name="password_line" type="LineEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 454.0
+offset_right = 661.0
+offset_bottom = 485.0
+secret = true
+
+[node name="login_button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 282.0
+offset_right = 977.0
+offset_bottom = 338.0
+theme_override_font_sizes/font_size = 23
+text = "Iniciar sesión"
+
+[node name="register_button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 818.0
+offset_top = 427.0
+offset_right = 987.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 24
+text = "Registrarse"
+
+[node name="error_label" type="Label" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 103.0
+offset_top = 129.0
+offset_right = 143.0
+offset_bottom = 152.0
