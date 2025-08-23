@@ -1,0 +1,8 @@
+res://menus/main_menu.tscn
+res://menus/lobby.tscn
+res://juego/blackjack.tscn
+res://login/register.tscn
+res://juego/blackjack_multiplayer.tscn
+res://menus/lobby.gd
+res://login/control.tscn
+res://juego/blackjack.gd
