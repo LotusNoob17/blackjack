@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://ruvd0an6b6md"]
+
+[ext_resource type="Script" uid="uid://cnh63nk4dk64m" path="res://menus/lobby.gd" id="1_g1gpu"]
+[ext_resource type="Texture2D" uid="uid://ci5s24q1vqwke" path="res://assets/fonds/Fondo.png" id="2_wdsfw"]
+
+[node name="Lobby" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g1gpu")
+
+[node name="ip_input" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 688.0
+offset_top = 309.0
+offset_right = 866.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 40
+placeholder_text = "127.0.0.1"
+alignment = 1
+
+[node name="host_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 488.0
+offset_right = 877.0
+offset_bottom = 531.0
+theme_override_font_sizes/font_size = 25
+text = "Crear partida"
+
+[node name="join_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 670.0
+offset_top = 593.0
+offset_right = 881.0
+offset_bottom = 641.0
+theme_override_font_sizes/font_size = 25
+text = "Unirse a partida"
+
+[node name="back1_button" type="Button" parent="."]
+offset_left = 1004.0
+offset_top = 746.0
+offset_right = 1125.0
+offset_bottom = 777.0
+text = "Volver
+"
+
+[node name="status_label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Fondo" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(805, 445.5)
+scale = Vector2(1.04818, 0.870117)
+texture = ExtResource("2_wdsfw")
