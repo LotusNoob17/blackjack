@@ -1,0 +1,109 @@
+[gd_scene load_steps=3 format=3 uid="uid://cequ78t8q8237"]
+
+[ext_resource type="Script" uid="uid://bxl6yhiil8bmb" path="res://juego/blackjack.gd" id="1_j3nd4"]
+[ext_resource type="Texture2D" uid="uid://bat0wtwi7pksx" path="res://assets/fonds/fondomesa.png" id="2_mtpsk"]
+
+[node name="Blackjack" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1615.0
+offset_bottom = 891.0
+script = ExtResource("1_j3nd4")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1607.0
+offset_bottom = 892.0
+
+[node name="user_label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 776.0
+offset_right = 270.0
+offset_bottom = 851.0
+theme_override_font_sizes/font_size = 23
+
+[node name="player_score" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 42.0
+offset_right = 264.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 30
+text = "Puntos: 0"
+
+[node name="player_hand" type="HBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 0
+offset_left = 524.0
+offset_top = 656.0
+offset_right = 1095.0
+offset_bottom = 806.0
+
+[node name="dealer_score" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 1315.0
+offset_top = 83.0
+offset_right = 1498.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 30
+text = "Dealer: ?"
+
+[node name="dealer_hand" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 704.0
+offset_top = 14.0
+offset_right = 922.0
+offset_bottom = 189.0
+
+[node name="hit_button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1282.0
+offset_top = 636.0
+offset_right = 1421.0
+offset_bottom = 679.0
+theme_override_font_sizes/font_size = 25
+text = "Pedir carta"
+
+[node name="stand_button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 1293.0
+offset_top = 765.0
+offset_right = 1415.0
+offset_bottom = 808.0
+theme_override_font_sizes/font_size = 25
+text = "Plantarse"
+
+[node name="result_label" type="Label" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 1269.0
+offset_top = 295.0
+offset_right = 1492.0
+offset_bottom = 338.0
+
+[node name="restart_button" type="Button" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 42.0
+offset_top = 452.0
+offset_right = 217.0
+offset_bottom = 492.0
+theme_override_font_sizes/font_size = 23
+text = "Jugar de nuevo"
+
+[node name="back_button" type="Button" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 86.0
+offset_top = 628.0
+offset_right = 164.0
+offset_bottom = 668.0
+theme_override_font_sizes/font_size = 23
+text = "Volver"
+
+[node name="Fondomesa" type="Sprite2D" parent="Panel"]
+show_behind_parent = true
+position = Vector2(803, 446)
+scale = Vector2(1.04297, 0.869141)
+texture = ExtResource("2_mtpsk")
