@@ -36,3 +36,6 @@ func _on_connected():
 func _on_player_joined(id):
 	print("Jugador conectado con ID:", id)
 	get_tree().change_scene_to_file("res://juego/blackjack_multiplayer.tscn")
+
+func ready() -> void:
+	Audio.play_music()

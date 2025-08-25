@@ -6,14 +6,20 @@
 [node name="RegisterScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1150.0
-offset_bottom = 648.0
+offset_right = 1607.0
+offset_bottom = 885.0
 script = ExtResource("1_x5wc1")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
 offset_right = 1608.0
 offset_bottom = 888.0
+
+[node name="Fondo" type="Sprite2D" parent="Panel"]
+show_behind_parent = true
+position = Vector2(806, 445)
+scale = Vector2(1.04557, 0.869141)
+texture = ExtResource("2_ax3i6")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
@@ -89,9 +95,3 @@ offset_top = 329.0
 offset_right = 997.0
 offset_bottom = 430.0
 theme_override_font_sizes/font_size = 25
-
-[node name="Fondo" type="Sprite2D" parent="Panel"]
-show_behind_parent = true
-position = Vector2(806, 445)
-scale = Vector2(1.04557, 0.869141)
-texture = ExtResource("2_ax3i6")

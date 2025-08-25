@@ -226,3 +226,6 @@ func _on_save_match_response(result, response_code, headers, body):
 		print("✅ Partida registrada en la base de datos.")
 	else:
 		print("❌ Error al guardar partida:", response)
+		
+func ready() -> void:
+	Audio.play_music()

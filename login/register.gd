@@ -56,3 +56,6 @@ func _on_register_response(result, response_code, headers, body):
 func _show_error(msg: String):
 	error_label.text = msg
 	error_label.visible = true
+
+func ready() -> void:
+	Audio.play_music()

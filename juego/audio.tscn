@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://sclki42y7ylk"]
+
+[ext_resource type="Script" uid="uid://be0pi7y62f7yf" path="res://audio.gd" id="1_03lo4"]
+[ext_resource type="AudioStream" uid="uid://cnosbo4kyb7e4" path="res://music/loop_jazz.mp3" id="2_cybu8"]
+
+[node name="audio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_03lo4")
+
+[node name="audio_game" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cybu8")
+volume_db = -9.369
+autoplay = true

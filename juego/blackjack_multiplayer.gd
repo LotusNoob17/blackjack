@@ -383,3 +383,6 @@ func sync_game_state(p_hand: Array, d_hand: Array):
 		dealer_hand = d_hand.duplicate(true)
 
 	_update_hands()
+
+func ready() -> void:
+	Audio.play_music()

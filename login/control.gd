@@ -53,3 +53,6 @@ func _on_login_response(result: int, response_code: int, headers: PackedStringAr
 func _show_error(msg: String):
 	error_label.text = msg
 	error_label.visible = true
+
+func ready() -> void:
+	Audio.play_music()

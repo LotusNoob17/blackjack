@@ -20,3 +20,5 @@ func _on_multiplayer_pressed():
 func _on_logout_pressed():
 	Global.logged_user = ""
 	get_tree().change_scene_to_file("res://login/control.tscn")
+func ready() -> void:
+	Audio.play_music()

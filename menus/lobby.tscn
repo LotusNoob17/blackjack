@@ -39,6 +39,7 @@ theme_override_font_sizes/font_size = 25
 text = "Unirse a partida"
 
 [node name="back1_button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 1004.0
 offset_top = 746.0
 offset_right = 1125.0
