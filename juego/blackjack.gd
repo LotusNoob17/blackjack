@@ -3,7 +3,7 @@ extends Control
 @onready var user_label = $Panel/user_label
 
 
-const SUITS = ["♠", "♥"]
+const SUITS = ["♠", "♥", "♦", "♣"]
 const VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
 var deck = []
@@ -100,7 +100,7 @@ func _add_card_visual(container: Node, card: Dictionary):
 	if card.value == "?" or card.suit == "?":
 		texture = load("res://assets/cards/back.png")
 	else:
-		var suit_map = {"♠": "P", "♥": "C"}
+		var suit_map = {"♠": "P", "♥": "C", "♦": "D", "♣": "T"}
 		var file_name = "%s%s.png" % [card.value, suit_map.get(card.suit, "")]
 		var path = "res://assets/cards/" + file_name
 
